@@ -1135,12 +1135,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/commitlint-config@npm:2.0.1":
-  version: 2.0.1
-  resolution: "@pob/commitlint-config@npm:2.0.1"
+"@pob/commitlint-config@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@pob/commitlint-config@npm:2.0.0"
   dependencies:
     "@commitlint/config-conventional": ^11.0.0
-  checksum: 8b77d099df2682c63b512383ae800024626786bdbb255945475fc26a57623734504df46cb63fa6ec381084bf5f9d6bc71a231f990bb7c4c2eb2753ead6e2ff80
+  checksum: e01f667a29dd957532dc4ceafc184e602c56525d95709e65590bc6f57543f9887a92d958ee974c39f58e34955dd979a1ee97e5b18aac9fae6d29657452eaa044
   languageName: node
   linkType: hard
 
@@ -6872,7 +6872,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "reviewflow-lerna-test@workspace:."
   dependencies:
-    "@pob/commitlint-config": 2.0.1
+    "@pob/commitlint-config": 2.0.0
     "@pob/eslint-config": 41.0.4
     "@pob/eslint-config-node": 41.0.4
     "@pob/lerna-light": 3.23.0
