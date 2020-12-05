@@ -1,0 +1,47 @@
+{
+  "name": "reviewflow-lerna-test",
+  "private": true,
+  "author": "Christophe Hurpeau <christophe@hurpeau.com>",
+  "license": "ISC",
+  "repository": "https://github.com/reviewflow/lerna-test.git",
+  "homepage": "https://github.com/reviewflow/lerna-test",
+  "engines": {
+    "node": ">=12.10.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "yarn run lint:prettier && yarn run lint:eslint",
+    "lint:eslint": "eslint --report-unused-disable-directives --quiet --resolve-plugins-relative-to . --ext js,ts,tsx .",
+    "lint:prettier": "prettier --check .",
+    "preversion": "yarn run lint && repository-check-dirty",
+    "release": "GH_TOKEN=$POB_GITHUB_TOKEN lerna version --conventional-commits --conventional-graduate --create-release=github -m 'chore: release' && lerna publish from-git"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true,
+    "arrowParens": "always"
+  },
+  "commitlint": {
+    "extends": [
+      "@pob/commitlint-config"
+    ]
+  },
+  "devDependencies": {
+    "@pob/commitlint-config": "2.0.1",
+    "@pob/eslint-config": "41.0.4",
+    "@pob/eslint-config-node": "41.0.4",
+    "@pob/lerna-light": "3.23.0",
+    "@pob/root": "3.0.2",
+    "@typescript-eslint/eslint-plugin": "4.9.0",
+    "@typescript-eslint/parser": "4.9.0",
+    "eslint": "7.15.0",
+    "eslint-import-resolver-node": "0.3.4",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-unicorn": "23.0.0",
+    "husky": "4.3.4",
+    "prettier": "2.2.1"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "1.0.0-pre",
+  "author": "Christophe Hurpeau <christophe@hurpeau.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reviewflow/lerna-test.git",
+    "directory": "packages/test"
+  },
+  "homepage": "https://github.com/reviewflow/lerna-test",
+  "engines": {
+    "node": ">=12.10.0"
+  },
+  "main": "./lib/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "lint": "yarn run lint:eslint",
+    "lint:eslint": "yarn --cwd ../.. eslint --report-unused-disable-directives --quiet packages/test"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true,
+    "arrowParens": "always"
+  },
+  "pob": {},
+  "devDependencies": {
+    "@pob/eslint-config": "41.0.4",
+    "@pob/eslint-config-node": "41.0.4",
+    "eslint": "7.15.0",
+    "eslint-import-resolver-node": "0.3.4",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-unicorn": "23.0.0"
+  }
+}
