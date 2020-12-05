@@ -1369,11 +1369,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/eslint-config@npm:41.0.3":
-  version: 41.0.3
-  resolution: "@pob/eslint-config@npm:41.0.3"
+"@pob/eslint-config@npm:41.0.4":
+  version: 41.0.4
+  resolution: "@pob/eslint-config@npm:41.0.4"
   dependencies:
-    "@pob/use-eslint-plugin": ^41.0.0
+    "@pob/use-eslint-plugin": ^41.0.4
     eslint-config-airbnb-base: ^14.2.1
     eslint-config-prettier: ^6.11.0
     eslint-plugin-unicorn: ^23.0.0
@@ -1386,7 +1386,7 @@ __metadata:
       optional: true
     eslint-plugin-unicorn:
       optional: true
-  checksum: 5bde9954659253a65f4b55733ece165b09f6c786050789a5f65613c2fa82265cbbc6a9a3705d372b79a2c1ada43646f6cfcdc2c1c54de221951d331c0adc2106
+  checksum: 9992d710bc5368c90f82d3ce4dfa93815ae47774cfbf1079952a5334a38493369d0d1a80522f3b72cca1704664d4eeb63b37c91adbea9f6fd94ab87e59653411
   languageName: node
   linkType: hard
 
@@ -1428,7 +1428,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/use-eslint-plugin@npm:^41.0.0, @pob/use-eslint-plugin@npm:^41.0.4":
+"@pob/use-eslint-plugin@npm:^41.0.4":
   version: 41.0.4
   resolution: "@pob/use-eslint-plugin@npm:41.0.4"
   checksum: 319725f5e275fc8579ad48556e6dcdddd909997d464753467cb44c5abcd7ad88ef721942c938c69ce48284544d747cb97dba6ea8cfb0c4febdb28d3034347d1b
@@ -7164,7 +7164,7 @@ __metadata:
   resolution: "reviewflow-lerna-test@workspace:."
   dependencies:
     "@pob/commitlint-config": 2.0.1
-    "@pob/eslint-config": 41.0.3
+    "@pob/eslint-config": 41.0.4
     "@pob/eslint-config-node": 41.0.4
     "@pob/lerna-light": 3.23.0
     "@pob/root": 3.0.2
@@ -7959,7 +7959,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "test-pkg@workspace:packages/test-pkg"
   dependencies:
-    "@pob/eslint-config": 41.0.3
+    "@pob/eslint-config": 41.0.4
     "@pob/eslint-config-node": 41.0.4
     babel-preset-latest-node: 5.0.0
     eslint: 7.15.0
