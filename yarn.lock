@@ -7955,9 +7955,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"test@workspace:packages/test":
+"test-pkg@workspace:packages/test-pkg":
   version: 0.0.0-use.local
-  resolution: "test@workspace:packages/test"
+  resolution: "test-pkg@workspace:packages/test-pkg"
   dependencies:
     "@pob/eslint-config": 41.0.3
     "@pob/eslint-config-node": 41.0.4

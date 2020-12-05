@@ -6,6 +6,6 @@
 
 This repository is a monorepo that we manage using [Lerna](https://github.com/lerna/lerna).
 
-| Package               | Version | Description |
-| --------------------- | ------- | ----------- |
-| [test](packages/test) |         |
+| Package                       | Version | Description |
+| ----------------------------- | ------- | ----------- |
+| [test-pkg](packages/test-pkg) |         |
