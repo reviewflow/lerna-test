@@ -26,8 +26,8 @@
   },
   "pob": {},
   "devDependencies": {
-    "@pob/eslint-config": "41.0.3",
-    "@pob/eslint-config-node": "41.0.4",
+    "@pob/eslint-config": "41.1.2",
+    "@pob/eslint-config-node": "41.1.2",
     "babel-preset-latest-node": "5.0.0",
     "eslint": "7.15.0",
     "eslint-import-resolver-node": "0.3.4",
