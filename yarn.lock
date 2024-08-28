@@ -4047,6 +4047,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-es@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "eslint-plugin-es@npm:4.1.0"
+  dependencies:
+    eslint-utils: ^2.0.0
+    regexpp: ^3.0.0
+  peerDependencies:
+    eslint: ">=4.19.1"
+  checksum: ad9de9606447182056d1ec769afe4dca18a974d1124f3f76b2c5784fd957b6e8ec8c3028ecd8546a47e362c7c46cd1e71a1308a44adbb81c1d548c688ba1b641
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-import@npm:2.22.1":
   version: 2.22.1
   resolution: "eslint-plugin-import@npm:2.22.1"
@@ -4070,7 +4082,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-node@npm:11.1.0, eslint-plugin-node@npm:^11.1.0":
+"eslint-plugin-n@npm:14.0.0":
+  version: 14.0.0
+  resolution: "eslint-plugin-n@npm:14.0.0"
+  dependencies:
+    eslint-plugin-es: ^4.1.0
+    eslint-utils: ^3.0.0
+    ignore: ^5.1.1
+    is-core-module: ^2.3.0
+    minimatch: ^3.0.4
+    resolve: ^1.10.1
+    semver: ^6.1.0
+  peerDependencies:
+    eslint: ">=7.0.0"
+  checksum: a4fd1100978f7b2e206440122bf89f0f40ecf3781441ed555d9d52c3c84e2bf5a28874262baa0a026f86a9b825e00725456d9bd8b515560ed28716a02d0940e9
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-node@npm:^11.1.0":
   version: 11.1.0
   resolution: "eslint-plugin-node@npm:11.1.0"
   dependencies:
@@ -4139,6 +4168,17 @@ __metadata:
   dependencies:
     eslint-visitor-keys: ^1.1.0
   checksum: a43892372a4205374982ac9d4c8edc5fe180cba76535ab9184c48f18a3d931b7ffdd6862cb2f8ca4305c47eface0e614e39884a75fbf169fcc55a6131af2ec48
+  languageName: node
+  linkType: hard
+
+"eslint-utils@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "eslint-utils@npm:3.0.0"
+  dependencies:
+    eslint-visitor-keys: ^2.0.0
+  peerDependencies:
+    eslint: ">=5"
+  checksum: 035451529f016e28edd26e8951f15e28a6a4e58adff67bd0cb494879f360080750b9c779e46561369aec0657ac2b89dd8b0aa38476e8cdf50e635aa872fa27b6
   languageName: node
   linkType: hard
 
@@ -4747,10 +4787,10 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"function-bind@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "function-bind@npm:1.1.1"
-  checksum: ffad86e7d2010ba179aaa6a3987d2cc0ed48fa92d27f1ed84bfa06d14f77deeed5bfbae7f00bdebc0c54218392cab2b18ecc080e2c72f592431927b87a27d42b
+"function-bind@npm:^1.1.1, function-bind@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "function-bind@npm:1.1.2"
+  checksum: 0d0c3d1dbe839454b444f2b9ee49cfdc35e40ed48c46658ad7f45d7e8621479adad93195fdd509860c5a339a69e2ffd9312d2e2ddb8671c248c9ff2942124468
   languageName: node
   linkType: hard
 
@@ -5200,6 +5240,15 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"hasown@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "hasown@npm:2.0.2"
+  dependencies:
+    function-bind: ^1.1.2
+  checksum: e29681c0d8d4deaaf24c88f34238827acaed982fabed30c1922bc39cb8c2ee5140e9b3e6f5bb181363ed6c24c04ae5c04432eb113375210345ce51894059b92d
+  languageName: node
+  linkType: hard
+
 "hosted-git-info@npm:^2.1.4, hosted-git-info@npm:^2.7.1":
   version: 2.8.8
   resolution: "hosted-git-info@npm:2.8.8"
@@ -5540,12 +5589,12 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"is-core-module@npm:^2.1.0":
-  version: 2.2.0
-  resolution: "is-core-module@npm:2.2.0"
+"is-core-module@npm:^2.1.0, is-core-module@npm:^2.3.0":
+  version: 2.15.1
+  resolution: "is-core-module@npm:2.15.1"
   dependencies:
-    has: ^1.0.3
-  checksum: 2344744de98a3bc22e2bb30895f307d7889f09e963f9bcb1cc321788f508c8b463f75e0a9ca009eeeb8eb9465181b5c15f1ec9299a6bb6921cfbb2423892e0ba
+    hasown: ^2.0.2
+  checksum: 1617feff5f8af20a77bf34a39e0b90e0cdae989ee010c7d78e88f8575454c8c12820818f1b614a94e541f4c327b624bd20df01328f612c5b28bd5d35a19791d9
   languageName: node
   linkType: hard
 
@@ -8912,7 +8961,7 @@ fsevents@^2.1.2:
     eslint: 7.15.0
     eslint-import-resolver-node: 0.3.4
     eslint-plugin-import: 2.22.1
-    eslint-plugin-node: 11.1.0
+    eslint-plugin-n: 14.0.0
     eslint-plugin-unicorn: 23.0.0
     husky: 4.3.4
     prettier: 2.2.1
@@ -9855,7 +9904,7 @@ fsevents@^2.1.2:
     eslint: 7.15.0
     eslint-import-resolver-node: 0.3.4
     eslint-plugin-import: 2.22.1
-    eslint-plugin-node: 11.1.0
+    eslint-plugin-n: 14.0.0
     eslint-plugin-unicorn: 23.0.0
     jest: 26.6.2
   languageName: unknown
